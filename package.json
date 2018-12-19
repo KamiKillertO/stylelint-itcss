@@ -16,6 +16,7 @@
   "author": "Benjamin JEGARD",
   "license": "MIT",
   "devDependencies": {
+    "ava": "1.0.0-rc.2",
     "stylelint": "9.9.0",
     "tslint": "5.11.0",
     "typescript": "3.2.2",
