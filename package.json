@@ -1,12 +1,13 @@
 {
   "name": "stylelint-itcss",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A stylelint plugin to help with itcss architecture",
   "main": "dist/src/index.js",
   "scripts": {
     "compile": "tsc -watch -p ./",
     "lint": "node ./node_modules/.bin/tslint -c tslint.json --project tsconfig.json",
-    "test": "tsc -b; ./node_modules/.bin/ava"
+    "test": "tsc -b; ./node_modules/.bin/ava",
+    "commit": "npx git-cz"
   },
   "keywords": [
     "stylelint",
@@ -16,10 +17,17 @@
   "author": "Benjamin JEGARD",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^8.0.0",
     "ava": "1.0.0-rc.2",
+    "commitizen": "3.0.5",
+    "cz-conventional-changelog": "2.1.0",
     "stylelint": "9.9.0",
     "tslint": "5.11.0",
-    "typescript": "3.2.2",
-    "@types/node": "^8.0.0"
+    "typescript": "3.2.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
