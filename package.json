@@ -7,7 +7,9 @@
     "compile": "tsc -watch -p ./",
     "lint": "node ./node_modules/.bin/tslint -c tslint.json --project tsconfig.json",
     "test": "tsc -b; ./node_modules/.bin/ava",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "keywords": [
     "stylelint",
@@ -20,6 +22,7 @@
     "@types/node": "^8.0.0",
     "ava": "1.0.0-rc.2",
     "commitizen": "3.0.5",
+    "conventional-changelog-cli": "2.0.11",
     "cz-conventional-changelog": "2.1.0",
     "stylelint": "9.9.0",
     "tslint": "5.11.0",
