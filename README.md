@@ -1,6 +1,6 @@
 # stylelint-itcss
 
-![Version on npm](https://img.shields.io/npm/v/kamikillerto/stylelint-itcss.svg)
+![Version on npm](https://img.shields.io/npm/v/stylelint-itcss.svg)
 [![Build Status](https://travis-ci.org/KamiKillertO/stylelint-itcss.svg?branch=master)](https://travis-ci.org/KamiKillertO/stylelint-itcss)
 
 ## Installation and usage
