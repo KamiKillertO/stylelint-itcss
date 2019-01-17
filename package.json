@@ -13,6 +13,7 @@
   },
   "keywords": [
     "stylelint",
+    "stylelint-plugin",
     "itcss",
     "css"
   ],
