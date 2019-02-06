@@ -5,7 +5,6 @@ import { utils } from "stylelint";
 export const ruleName = "itcss/no-at-important";
 
 export const messages = utils.ruleMessages(ruleName, {
-  // expected: selector => `Unexpected using "{ display: none; }" in ${selector}`,
   expected: `Use of "!important" is forbidden in this layers`,
 
 });
@@ -13,9 +12,6 @@ export const messages = utils.ruleMessages(ruleName, {
 interface RuleOption {
   ignoreLayers?: string[];
 }
-const exceptLayersDefault = [
-  "utilities"
-];
 
 function check(node) {
   if (node.type !== "rule") {
@@ -29,7 +25,6 @@ function check(node) {
 
 function rule(enable, options: RuleOption = {}) {
   return (root, result) => {
-
     // const validOptions = utils.validateOptions(result, ruleName, { enable }); // 🤷‍♂️
     if (enable === false) {
       return;
