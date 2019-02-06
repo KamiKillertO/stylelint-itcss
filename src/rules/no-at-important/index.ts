@@ -1,5 +1,5 @@
-import * as path from "path";
 import { utils } from "stylelint";
+import { isIgnoredLayer } from "../../utils/validate-layer";
 // import isStandardSyntaxRule from "stylelint/lib/utils/isStandardSyntaxRule";
 
 export const ruleName = "itcss/no-at-important";
@@ -26,22 +26,7 @@ function check(node) {
 function rule(enable, options: RuleOption = {}) {
   return (root, result) => {
     // const validOptions = utils.validateOptions(result, ruleName, { enable }); // 🤷‍♂️
-    if (enable === false) {
-      return;
-    }
-
-    const filePath: path.ParsedPath = path.parse(result.opts.from || "");
-    options.ignoreLayers = options.ignoreLayers || []; // no default
-    let isIgnoredLayer = false;
-    isIgnoredLayer = options.ignoreLayers.some(layer => {
-      let test = filePath.dir.split(path.sep).indexOf(layer) !== -1;
-      if (test === false) {
-        test = filePath.name.match(layer) !== null;
-      }
-      return test;
-    });
-
-    if (isIgnoredLayer) {
+    if (enable === false || isIgnoredLayer(options.ignoreLayers, result.opts.from)) {
       return;
     }
 
