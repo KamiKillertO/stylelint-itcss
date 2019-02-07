@@ -1,4 +1,4 @@
-# 0.1.0 (2019-01-16)
+# 0.2.0 (2019-02-07)
 
 
 ### Bug Fixes
@@ -8,7 +8,10 @@
 
 ### Features
 
+* Add some explanation for the rule/options 64eae99
+* Add the new rule `no-variable-declaration` 1cb29bc
 * Create the first rule 'no-at-important' 583728e
+* Install and setup commitlint 5e837e6
 
 
 
