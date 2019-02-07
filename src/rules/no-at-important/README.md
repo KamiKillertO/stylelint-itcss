@@ -11,11 +11,11 @@ The following pattern are considered violations:
 
 ```css
 a {
-  color: white !imporant;
+  color: white !important;
 }
 
 .foo {
-  color: white !imporant;
+  color: white !important;
 }
 ```
 
@@ -32,22 +32,22 @@ The following patterns are *not* considered violations:
 ```css
 // file `styles/utilities/_utilities.util.css`
 a {
-  color: white !imporant;
+  color: white !important;
 }
 
 .foo {
-  color: white !imporant;
+  color: white !important;
 }
 ```
 
 ```css
 // file `styles/utilities/util.css`
 a {
-  color: white !imporant;
+  color: white !important;
 }
 
 .foo {
-  color: white !imporant;
+  color: white !important;
 }
 ```
 
@@ -56,21 +56,21 @@ The following patterns are considered violations:
 ```css
 // file `styles/layer/main.css`
 a {
-  color: white !imporant;
+  color: white !important;
 }
 
 .foo {
-  color: white !imporant;
+  color: white !important;
 }
 ```
 
 ```css
 // file `styles/layer/_layer.main.css`
 a {
-  color: white !imporant;
+  color: white !important;
 }
 
 .foo {
-  color: white !imporant;
+  color: white !important;
 }
 ```
