@@ -13,7 +13,7 @@ interface RuleOption {
   ignoreLayers?: string[];
 }
 
-function check(node) {
+function check(node): boolean {
   if (node.type !== "rule") {
     return true;
   }
@@ -44,7 +44,7 @@ function rule(enable, options: RuleOption = {}) {
       if (!selector) {
         return;
       }
-      const containAtImportant = check(node);
+      const containAtImportant: boolean = check(node);
       if (containAtImportant === true) {
         utils.report({
           index: node.lastEach,
