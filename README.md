@@ -1,5 +1,6 @@
 # stylelint-itcss
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KamiKillertO/stylelint-itcss.svg)](https://greenkeeper.io/)
 ![Version on npm](https://img.shields.io/npm/v/stylelint-itcss.svg)
 [![Build Status](https://travis-ci.org/KamiKillertO/stylelint-itcss.svg?branch=master)](https://travis-ci.org/KamiKillertO/stylelint-itcss)
 
