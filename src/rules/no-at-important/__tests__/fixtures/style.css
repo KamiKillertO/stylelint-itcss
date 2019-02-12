@@ -1,3 +1,9 @@
 li {
   color: blue !important;
 }
+.foo {
+  color: red !important;
+}
+.bar {
+  color: yellow !important;
+}

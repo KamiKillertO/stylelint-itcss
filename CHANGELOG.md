@@ -1,17 +1,18 @@
-# 0.2.0 (2019-02-07)
-
+# [0.2.1] (2019-02-12)
 
 ### Bug Fixes
 
-* Use the tslint bin to run the lint command 25dbdbe
+* Report as many errors as `!important` in a rule
 
+## 0.2.0 (2019-02-12)
 
 ### Features
 
 * Add some explanation for the rule/options 64eae99
 * Add the new rule `no-variable-declaration` 1cb29bc
+
+## 0.1.0 (2019-01-16)
+
+### Features
+
 * Create the first rule 'no-at-important' 583728e
-* Install and setup commitlint 5e837e6
-
-
-
