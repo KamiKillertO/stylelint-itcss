@@ -13,12 +13,12 @@ interface RuleOption {
   ignoreLayers?: string[];
 }
 
-function check(node): boolean {
+function findAtImportant(node): any[] | null {
   if (node.type !== "rule") {
-    return true;
+    return null;
   }
 
-  return node.nodes.some(
+  return node.nodes.filter(
     o => o.type === "decl" && o.important === true
   );
 }
@@ -44,14 +44,16 @@ function rule(enable, options: RuleOption = {}) {
       if (!selector) {
         return;
       }
-      const containAtImportant: boolean = check(node);
-      if (containAtImportant === true) {
-        utils.report({
-          index: node.lastEach,
-          message: messages.expected,
-          node,
-          ruleName,
-          result
+      const atImportantProperties: any[] | null = findAtImportant(node);
+      if (atImportantProperties !== null) {
+        atImportantProperties.forEach(property => {
+          utils.report({
+            // index: node.lastEach,
+            message: messages.expected,
+            node: property,
+            ruleName,
+            result
+          });
         });
       }
     });

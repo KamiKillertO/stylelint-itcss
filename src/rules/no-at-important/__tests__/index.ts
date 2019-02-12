@@ -52,4 +52,15 @@ test.serial(`${ruleName} - layers options - ko`, async t => {
   };
   const output = await stylelint.lint(options);
   t.true(output.errored);
+  const warnings: any[] = output.results[0].warnings;
+  t.is(warnings.length, 3);
+
+  t.is(warnings[0].line, 2);
+  t.is(warnings[0].column, 3); // should the position of !important
+
+  t.is(warnings[1].line, 5);
+  t.is(warnings[1].column, 3); // should the position of !important
+
+  t.is(warnings[2].line, 8);
+  t.is(warnings[2].column, 3); // should the position of !important
 });
