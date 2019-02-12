@@ -1,6 +1,6 @@
 {
   "name": "stylelint-itcss",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A stylelint plugin to help with itcss architecture",
   "main": "dist/src/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "lint": "node ./node_modules/.bin/tslint -c tslint.json --project tsconfig.json",
     "test": "tsc -b; ./node_modules/.bin/ava",
     "commit": "npx git-cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 5",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "keywords": [
