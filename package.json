@@ -1,6 +1,6 @@
 {
   "name": "stylelint-itcss",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "A stylelint plugin to help with itcss architecture",
   "main": "dist/src/index.js",
   "scripts": {
