@@ -1,6 +1,6 @@
 {
   "name": "stylelint-itcss",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "A stylelint plugin to help with itcss architecture",
   "main": "dist/src/index.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "lint": "node ./node_modules/.bin/tslint -c tslint.json --project tsconfig.json",
     "test": "tsc -b; ./node_modules/.bin/ava",
     "commit": "npx git-cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 5",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r && git add CHANGELOG.md"
   },
   "keywords": [
     "stylelint",
@@ -20,13 +20,13 @@
   "author": "Benjamin JEGARD",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "7.5.0",
+    "@commitlint/cli": "7.5.1",
     "@commitlint/config-conventional": "7.5.0",
     "@commitlint/config-angular": "7.5.0",
     "@types/node": "^8.0.0",
     "ava": "1.0.0-rc.2",
     "commitizen": "3.0.5",
-    "conventional-changelog-cli": "2.0.11",
+    "conventional-changelog-cli": "2.0.12",
     "cz-conventional-changelog": "2.1.0",
     "husky": "1.3.1",
     "stylelint": "9.9.0",

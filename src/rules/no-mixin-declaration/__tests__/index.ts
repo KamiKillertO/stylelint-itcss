@@ -14,9 +14,8 @@ function ruleConfig(config: any[] = [true]) {
 test.serial(`${ruleName} - inline code - OK`, async t => {
   const options = {
     code: `
-      body {
-        color: blue;
-        margin: auto;
+      .foo {
+        color: red;
       }
     `,
     config: ruleConfig()
@@ -26,12 +25,10 @@ test.serial(`${ruleName} - inline code - OK`, async t => {
 });
 
 test.serial(`${ruleName} - inline code - KO`, async t => {
-
   const options = {
     code: `
-      body {
-        --color: blue;
-        margin: auto;
+      @mixin textRed {
+        color: red;
       }
     `,
     config: ruleConfig(),
@@ -41,30 +38,20 @@ test.serial(`${ruleName} - inline code - KO`, async t => {
 });
 
 test.serial(`${ruleName} - layers options - ok`, async t => {
-
   const options = {
-    files: ["**/no-variable-declaration/__tests__/fixtures/_layer.style.css"],
+    files: ["**/no-mixin-declaration/__tests__/fixtures/_layer.style.scss"],
     config: ruleConfig([true, { ignoreLayers: ["layer"] }]),
   };
+
   const output = await stylelint.lint(options);
   t.false(output.errored);
 });
 
 test.serial(`${ruleName} - layers options - ko`, async t => {
   const options = {
-    files: ["**/no-variable-declaration/__tests__/fixtures/style.css"],
+    files: ["**/no-mixin-declaration/__tests__/fixtures/style.*"],
     config: ruleConfig([true, { ignoreLayers: ["layer"] }]),
   };
   const output = await stylelint.lint(options);
   t.true(output.errored);
-});
-
-test.serial(`${ruleName} - ignoreVariables options - ok`, async t => {
-
-  const options = {
-    files: ["**/no-variable-declaration/__tests__/fixtures/style.css"],
-    config: ruleConfig([true, { ignoreVariables: ["--var"] }]),
-  };
-  const output = await stylelint.lint(options);
-  t.false(output.errored);
 });

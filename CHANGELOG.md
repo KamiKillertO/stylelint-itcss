@@ -1,3 +1,9 @@
+# 0.3.0 (2019-02-15)
+
+### Features
+
+* Create the new rule `no-mixin-declaration` cfe8116
+
 # [0.2.1] (2019-02-12)
 
 ### Bug Fixes
