@@ -43,7 +43,7 @@ test.serial(`${ruleName} - inline code - KO`, async t => {
 test.serial(`${ruleName} - layers options - ok`, async t => {
 
   const options = {
-    files: ["**/fixtures/_layer.style.css"],
+    files: ["**/no-variable-declaration/__tests__/fixtures/_layer.style.css"],
     config: ruleConfig([true, { ignoreLayers: ["layer"] }]),
   };
   const output = await stylelint.lint(options);
