@@ -8,9 +8,17 @@
     "lint": "node ./node_modules/.bin/tslint -c tslint.json --project tsconfig.json",
     "test": "tsc -b; ./node_modules/.bin/ava",
     "commit": "npx git-cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r && git add CHANGELOG.md"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r -a",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r -a && git add CHANGELOG.md"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamikillerto/stylelint-itcss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kamikillerto/stylelint-itcss/issues"
+  },
+  "homepage": "https://github.com/kamikillerto/stylelint-itcss/blob/master/README.MD",
   "keywords": [
     "stylelint",
     "stylelint-plugin",
