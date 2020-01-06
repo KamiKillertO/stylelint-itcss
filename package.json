@@ -23,7 +23,7 @@
     "@commitlint/cli": "7.5.2",
     "@commitlint/config-conventional": "7.5.0",
     "@commitlint/config-angular": "7.5.0",
-    "@types/node": "^8.0.0",
+    "@types/node": "^13.1.4",
     "ava": "1.0.0-rc.2",
     "commitizen": "3.0.7",
     "conventional-changelog-cli": "2.0.12",
