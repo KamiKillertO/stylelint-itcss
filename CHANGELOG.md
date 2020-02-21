@@ -1,10 +1,14 @@
-# 0.3.0 (2019-02-15)
+## 0.4.0 (2020-02-21)
+
+Drop support for node 6 and fix all security issues.
+
+## 0.3.0 (2019-02-15)
 
 ### Features
 
 * Create the new rule `no-mixin-declaration` cfe8116
 
-# [0.2.1] (2019-02-12)
+## 0.2.1 (2019-02-12)
 
 ### Bug Fixes
 
