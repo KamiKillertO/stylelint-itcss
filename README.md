@@ -23,4 +23,5 @@ Please refer to [stylelint docs](http://stylelint.io/user-guide/) for the detail
 |       | Rule ID                                                                                    | Description                                                             |
 | :---- | :----------------------------------------------------------------------------------------- | :---------------------------------------------------------------------- |
 |       | [no-at-important](./src/rules/no-at-important/README.md)                                   | Disallow the use of `!important`                                        |
-|       | [no-variable-declaration](./src/rules/no-variable-declaration/README.md)                   | Disallow the declaration of variables                                   |
+|       | [no-variable-declaration](./src/rules/no-variable-declaration/README.md)                   | Disallow the declaration of variables                
+|       | [no-mixin-declaration](./src/rules/no-mixin-declaration/README.md)                         | Disallow the declaration of mixins (SASS only)   |
