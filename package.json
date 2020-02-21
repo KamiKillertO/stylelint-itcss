@@ -30,7 +30,7 @@
     "cz-conventional-changelog": "3.1.0",
     "husky": "4.2.3",
     "stylelint": "9.10.1",
-    "tslint": "5.11.0",
+    "tslint": "6.0.0",
     "typescript": "3.7.5"
   },
   "config": {
