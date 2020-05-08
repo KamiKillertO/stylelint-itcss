@@ -13,7 +13,7 @@ yarn add --dev stylelint stylelint-itcss
 
 Create the `.stylelintrc.json` config file (or open the existing one), add `stylelint-itcss` to the plugins array and the rules you need to the rules list. All rules from stylelint-itcss need to be namespaced with `itcss`.
 
-Please refer to [stylelint docs](http://stylelint.io/user-guide/) for the detailed info on using this linter.
+Please refer to [stylelint docs](https://stylelint.io/user-guide/get-started) for the detailed info on using this linter.
 
 ## Rules
 
