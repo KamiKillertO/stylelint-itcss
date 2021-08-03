@@ -20,7 +20,7 @@
   "author": "Benjamin JEGARD",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^8.3.0",
+    "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^8.3.0",
     "@commitlint/config-angular": "^8.3.0",
     "@types/node": "^13.7.4",
